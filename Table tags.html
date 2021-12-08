@@ -8,6 +8,7 @@
 </head>
 <body>
         <h1> Table in HTML</h1>
+        
         <table style="border: 2px solid black;">
 
                 <caption> Table about cars</caption>
@@ -16,10 +17,10 @@
                                 <td> Car Name</td> <td> Price</td>
                         </tr>
                 </thead>
-
-        <tbody style="border: 2px solid black;"> 
+<!-- I am deleting border style in tbody and replacing it in table row -->
+        <tbody > 
             
-               <tr> 
+               <tr style="border: 2px solid black;"> 
                        <td> Audi</td> <td> 10 lakhs</td>
                <tr> 
                        <td> toyato</td> <td> 8 lakhs</td>
@@ -28,12 +29,14 @@
                 <tr>
                        <td> Range Rover</td> <td> 10 lakhs</td>
                 </tr>
+                    </tbody>
+                <!-- Changed(replaced) border closing tag also -->
         <tfoot>
                 <tr>
                         <td colspan="2"> Average price of cars is 9 lakhs</td>
                 </tr>
         </tfoot>
-        </tbody>
+    
         </table>
 </body>
 </html>
